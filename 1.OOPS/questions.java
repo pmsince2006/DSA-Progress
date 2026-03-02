@@ -107,42 +107,71 @@ import java.util.Scanner;
 
 
 
-//ques 3
-class area{
-    double calcarea(double rad){
-        return 3.14 * rad * rad;
-    }
-    double calcarea(double length, double width){
-        return 2 * length * width;
-    }
-    double calcarea(double length,double height,String type){
-        if(type == "triangle"){
-            return 0.5 * length * height;
-        }
-        return 0;
-    }
-}
-public class questions{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String type = sc.next();
-        area a = new area();
-        double area = 0;
-        if (type.equals("Circle")) {
-            double radius = sc.nextDouble();
-            area = a.calcarea(radius);
-        } else if (type.equals("Rectangle")) {
-            double length = sc.nextDouble();
-            double width = sc.nextDouble();
-            area = a.calcarea(length, width);
-        } else if (type.equals("triangle")) {
-            double base = sc.nextDouble();
-            double height = sc.nextDouble();
-            area = a.calcarea(base, height, "triangle");
-        }
-        System.out.println(area);
-        
-    }
+//QUESTION 3
+// abstract class payment{
+//     double amount;
 
-}
+//     payment(double amount){
+//         this.amount = amount;
+//     }
+
+//     abstract double calcfee();
+
+//     public void processpay(){
+//         double fee = calcfee();
+//         System.out.printf("Fee: %.2f\n", fee);
+//         System.out.printf("Total Amount debited: %.2f\n", amount + fee);
+//     }
+// }
+// class Creditcard extends payment{
+//     Creditcard(double amount){
+//         super(amount);
+//     }
+//     @Override
+//     double calcfee(){
+//         return amount * 0.02;
+//     }
+// }
+// class Debitcard extends payment{
+//     Debitcard(double amount){
+//         super(amount);
+//     }
+//     @Override
+//     double calcfee(){
+//         return amount * 0.01;
+//     }
+// }
+// class UPI extends payment{
+//     UPI(double amount){
+//         super(amount);
+//     }
+//     @Override
+//     double calcfee(){
+//         return amount * 0.001;
+//     }
+// }
+// public class question{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         double amount = sc.nextDouble();
+//         String paymenttype = sc.next();
+
+//         payment payment;
+//         switch(paymenttype){
+//             case "credit":
+//                 payment = new Creditcard(amount);
+//                 break;
+//             case "debit":
+//                 payment = new Debitcard(amount);
+//                 break;
+//             case "upi":
+//                 payment = new UPI(amount);
+//                 break;
+//             default:
+//                 System.out.println("Invalid payment type");
+//                 return;
+//         }
+//         payment.processpay();
+//     }
+// }
 
