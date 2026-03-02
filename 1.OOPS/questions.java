@@ -264,3 +264,62 @@ import java.util.Scanner;
 //         app.msg();
 //     }
 // }
+
+
+
+
+// QUESTION 6
+// abstract class account{
+//     double balance;
+
+//     account(double balance){
+//         this.balance = balance;
+//     }
+
+//     abstract double calcint();
+
+//     public void processpay(){
+//         double in = calcint();
+//         System.out.printf("Total Interest generated: %.2f\n", in);
+//     }
+// }
+// class saving extends account{
+//     saving(double balance){
+//         super(balance);
+//     }
+//     @Override
+//     double calcint(){
+//         return balance * 0.04;
+//     }
+// }
+// class current extends account{
+//     current(double balance){
+//         super(balance);
+//     }
+//     @Override
+//     double calcint(){
+//         return balance * 0.01;
+//     }
+// }
+// public class question{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         double balance = sc.nextDouble();
+//         String acctype = sc.next();
+
+//         account acc;
+//         switch(acctype.toLowerCase()){
+//             case "saving":
+//                 acc = new saving(balance);
+//                 break;
+//             case "current":
+//                 acc = new current(balance);
+//                 break;
+//             default:
+//                 System.out.println("Invalid account type");
+//                 return;
+//         }
+//         acc.processpay();
+//     }
+// }
+
