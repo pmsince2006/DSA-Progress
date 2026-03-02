@@ -175,3 +175,41 @@ import java.util.Scanner;
 //     }
 // }
 
+
+// QUESTION 4
+// class area{
+//     double calcarea(double rad){
+//         return 3.14 * rad * rad;
+//     }
+//     double calcarea(double length, double width){
+//         return 2 * length * width;
+//     }
+//     double calcarea(double length,double height,String type){
+//         if(type == "triangle"){
+//             return 0.5 * length * height;
+//         }
+//         return 0;
+//     }
+// }
+// public class questions{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String type = sc.next();
+//         area a = new area();
+//         double area = 0;
+//         if (type.equals("Circle")) {
+//             double radius = sc.nextDouble();
+//             area = a.calcarea(radius);
+//         } else if (type.equals("Rectangle")) {
+//             double length = sc.nextDouble();
+//             double width = sc.nextDouble();
+//             area = a.calcarea(length, width);
+//         } else if (type.equals("triangle")) {
+//             double base = sc.nextDouble();
+//             double height = sc.nextDouble();
+//             area = a.calcarea(base, height, "triangle");
+//         }
+//         System.out.println(area);
+        
+//     }
+// }
