@@ -67,7 +67,7 @@ import java.util.Scanner;
 
 
 
-// ques 2
+// QUESTION 2
 // class sal{
 //     int salary;
 //     int bonus;
@@ -145,3 +145,4 @@ public class questions{
     }
 
 }
+
