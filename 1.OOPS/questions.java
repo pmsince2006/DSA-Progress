@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//QUESTION 1
 // class car {
 //     int baseFare;
 //     int distance;
@@ -143,4 +143,5 @@ public class questions{
         System.out.println(area);
         
     }
+
 }
