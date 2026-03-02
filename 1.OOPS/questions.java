@@ -372,3 +372,75 @@ import java.util.Scanner;
 //         truck.displayDetails();
 //     }
 // }
+
+
+
+// QUESTION 8
+abstract class Policy {
+    double amount;
+    Policy(double amount) {
+        this.amount = amount;
+    }
+    abstract double calculatePremium();
+}
+class HealthPolicy extends Policy {
+    HealthPolicy(double amount) {
+        super(amount);
+    }
+    @Override
+    double calculatePremium() {
+        return amount * 0.05; 
+    }
+}
+class LifePolicy extends Policy {
+    LifePolicy(double amount) {
+        super(amount);
+    }
+    @Override
+    double calculatePremium() {
+        return amount * 0.07; 
+    }
+}
+class VehiclePolicy extends Policy {
+    VehiclePolicy(double amount) {
+        super(amount);
+    }
+    @Override
+    double calculatePremium() {
+        return amount * 0.04; 
+    }
+}
+public class question {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String policyType = sc.next().toLowerCase();
+        double amount = sc.nextDouble();
+
+        if (amount > 5000000) {
+            System.out.println("Amount exceeds limit");
+            return;
+        }
+
+        Policy policy;
+
+        switch (policyType) {
+            case "health":
+                policy = new HealthPolicy(amount);
+                break;
+            case "life":
+                policy = new LifePolicy(amount);
+                break;
+            case "vehicle":
+                policy = new VehiclePolicy(amount);
+                break;
+            default:
+                System.out.println("Invalid policy type");
+                return;
+        }
+
+        double premium = policy.calculatePremium(); 
+        System.out.printf("Premium: %.2f\n", premium);
+    }
+}
