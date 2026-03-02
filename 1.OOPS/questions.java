@@ -213,3 +213,54 @@ import java.util.Scanner;
         
 //     }
 // }
+
+
+
+//QUESTION 5
+// class appliance{
+//     void msg(){
+//         System.out.println("I am in appliance class");
+//     }
+// }
+// class ac extends appliance{
+//     @Override
+//     void msg(){
+//         System.out.println("AC is on");
+//     }
+// }
+// class fan extends appliance{
+//     @Override
+//     void msg(){
+//         System.out.println("Fan is on");
+//     }
+// }
+// class light extends appliance{
+//     @Override
+//     void msg(){
+//         System.out.println("Light is on");
+//     }
+// }
+// public class question{
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+//         String type = sc.next();
+
+//         appliance app;
+//         switch(type.toLowerCase()){
+//             case "ac":
+//                 app = new ac();
+//                 break;
+//             case "fan":
+//                 app = new fan();
+//                 break;
+//             case "light":
+//                 app = new light();
+//                 break;
+//             default:
+//                 System.out.println("Invalid type");
+//                 return;
+//         }
+//         app.msg();
+//     }
+// }
