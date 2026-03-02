@@ -323,3 +323,52 @@ import java.util.Scanner;
 //     }
 // }
 
+
+
+// QUESTION 7
+// class Vehicle {
+//     int speed;
+//     Vehicle(int speed) {
+//         this.speed = speed;
+//     }
+//     void displayVehicle() {
+//         System.out.println("Speed: " + speed + " km/h");
+//     }
+// }
+// class TransportVehicle extends Vehicle {
+//     int capacity;
+//     TransportVehicle(int speed, int capacity) {
+//         super(speed);
+//         this.capacity = capacity;
+//     }
+//     void displayTransportDetails() {
+//         System.out.println("Capacity: " + capacity + " kg");
+//     }
+// }
+// class Truck extends TransportVehicle {
+//     Truck(int speed, int capacity) {
+//         super(speed, capacity); 
+//     }
+//     void displayDetails() {
+//         displayVehicle();
+//         displayTransportDetails();
+//         System.out.println("Vehicle Type: Truck");
+//     }
+// }
+// public class question {
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+
+//         int speed = sc.nextInt();
+//         int capacity = sc.nextInt();
+
+//         if (speed > 200) {
+//             System.out.println("Speed exceeds limit");
+//             return;
+//         }
+
+//         Truck truck = new Truck(speed, capacity);
+//         truck.displayDetails();
+//     }
+// }
