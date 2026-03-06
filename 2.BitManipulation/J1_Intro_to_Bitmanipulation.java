@@ -42,3 +42,26 @@
 // }
 
 
+// 1's Complement - Simply flipping the bits
+// 2's Complement - Adding 1 to the 1's complement
+
+
+// AND Operator - Every bit should be true/1 to be true
+// OR Operator - Even one false means false
+// XOR Operator - Odd number of 1's give 1 and even number of 1's give 0
+// Shift Operator - Right Shift means shifting the rightest bit off and 0 comes at leftest bit
+// for right shift - num >> k = num / 2^k
+
+
+// the computer stores the positive number with the first bit as 0 
+// negative number with the first number as 1 (it does 2's complement to store it as negative number)
+
+
+// Shift Operator - Left shift means the leftest bit goes off and a 0 comes at the rightest bit
+// for left shifting - num << k = num * 2^k
+
+
+// NOT operator - first it flips the bits, then checks if it is negative 
+// If it is negative then it stores the 2's complement or it stops 
+
+
