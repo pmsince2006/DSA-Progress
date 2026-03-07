@@ -46,3 +46,18 @@
 
 
 // Setting an ith bit
+// public class bitproblem{
+//     static int setBit(int n, int i) {
+//         return n | (1 << i);
+//     }
+
+//     public static void main(String[] args) {
+//         int n = 10;
+//         int i = 2;
+
+//         int result = setBit(n, i);
+
+//         System.out.println("Original number: " + n);
+//         System.out.println("Number after setting " + i + "th bit: " + result);
+//     }
+// }
