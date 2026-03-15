@@ -139,3 +139,28 @@
 //         }
 //     }
 // }
+
+
+
+
+// Counting the number of setbits
+public class bitproblem{
+    static int countbits(int n){
+        int count = 0;
+        while(n > 0){
+            if(n % 2 == 1){
+                count++;
+            }
+            n = n / 2;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int n = 13;
+
+        int result = countbits(n);
+
+        System.out.println("Number of set bits: "+result);
+    }
+}
