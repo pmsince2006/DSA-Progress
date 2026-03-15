@@ -79,3 +79,22 @@
 //         System.out.println("Number after setting " + i + "th bit: " + result);
 //     }
 // }
+
+
+
+
+// Toggle ith bit
+// public class bitproblem{
+//     static int tglbit(int n,int i){
+//         return n ^ (1 << i);
+//     }
+//     public static void main(String[] args) {
+//         int n = 13;
+//         int i = 2;
+
+//         int result = tglbit(n,i);
+
+//         System.out.println("Original number: " + n);
+//         System.out.println("Number after toggling " + i + "th bit: " + result);
+//     }
+// }
