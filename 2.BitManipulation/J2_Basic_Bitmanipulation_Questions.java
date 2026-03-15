@@ -117,3 +117,25 @@
 //         System.out.println("Number after removing the set bit: "+ result);
 //     }
 // }
+
+
+
+// Check if the number is a power of 2
+// public class bitproblem {
+
+//     static boolean poweroftwo(int n){
+//         return n > 0 && ((n & (n - 1)) == 0);
+//     }
+
+//     public static void main(String[] args) {
+
+//         int n = 16;
+
+//         if(poweroftwo(n)){
+//             System.out.println("It is a power of 2");
+//         }
+//         else{
+//             System.out.println("Nope");
+//         }
+//     }
+// }
