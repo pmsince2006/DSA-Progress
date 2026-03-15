@@ -98,3 +98,22 @@
 //         System.out.println("Number after toggling " + i + "th bit: " + result);
 //     }
 // }
+
+
+
+// Removing the last set bit
+// public class bitproblem{
+//     static int setbit(int n){
+//         return n & (n - 1);
+//     }
+//     public static void main(String[] args) {
+//         int n = 13;
+//         int i = 2;
+
+//         int result = setbit(n);
+
+
+//         System.out.println("Original number: " + n);
+//         System.out.println("Number after removing the set bit: "+ result);
+//     }
+// }
