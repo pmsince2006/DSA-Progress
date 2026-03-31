@@ -31,5 +31,22 @@ public class first{
 
     //     rev(arr, i  + 1);
     // }
+
+
+
+   // Function to check if a string is a palindrome using recursion
+    // static boolean palindrome(String s,int i){
+    //     char[] arr = s.toCharArray();
+    //     int n = arr.length;
+
+    //     if(i >= n / 2){
+    //         return true;
+    //     }
+
+    //     if(arr[i] != arr[n - i - 1]){
+    //         return false;
+    //     }
+    //     return palindrome(s,i + 1);
+    // }
   
 }
