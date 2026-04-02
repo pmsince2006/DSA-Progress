@@ -24,17 +24,34 @@ public class first{
   //       subsequences(arr, i + 1, list);
   //   }
 
-  static void subsequences(int[] arr, int i, String ans){
+  // static void subsequences(int[] arr, int i, String ans){
     
+  //       if(i == arr.length){
+  //           System.out.println(ans);
+  //           return;
+  //       }
+
+  //       subsequences(arr, i + 1, ans + arr[i] + " ");
+
+  //       subsequences(arr, i + 1, ans);
+        
+  //   }
+
+
+  static void subsequnecesum(int[] arr,int i,int s, int sum,ArrayList<Integer> list){
+
         if(i == arr.length){
-            System.out.println(ans);
+            if(s == sum){
+                System.out.println(sum);
+            }
             return;
         }
 
-        subsequences(arr, i + 1, ans + arr[i] + " ");
+        list.add(arr[i]);
+        subsequnecesum(arr, i+1, s + arr[i],sum,list);
 
-        subsequences(arr, i + 1, ans);
-        
+        list.remove(list.size() - 1);
+        subsequnecesum(arr,i + 1,s,sum,list);
+
     }
-  
 }
