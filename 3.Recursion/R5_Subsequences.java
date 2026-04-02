@@ -9,19 +9,32 @@ public class first{
         subsequences(arr, 0, new ArrayList<>());
   }
 
-  static void subsequences(int[] arr, int i, ArrayList<Integer> list){
+  // static void subsequences(int[] arr, int i, ArrayList<Integer> list){
+    
+  //       if(i == arr.length){
+  //           System.out.println(list);
+  //           return;
+  //       }
+
+  //       list.add(arr[i]);
+  //       subsequences(arr, i + 1, list);
+
+  //       list.remove(list.size() - 1);
+
+  //       subsequences(arr, i + 1, list);
+  //   }
+
+  static void subsequences(int[] arr, int i, String ans){
     
         if(i == arr.length){
-            System.out.println(list);
+            System.out.println(ans);
             return;
         }
 
-        list.add(arr[i]);
-        subsequences(arr, i + 1, list);
+        subsequences(arr, i + 1, ans + arr[i] + " ");
 
-        list.remove(list.size() - 1);
-
-        subsequences(arr, i + 1, list);
+        subsequences(arr, i + 1, ans);
+        
     }
   
 }
