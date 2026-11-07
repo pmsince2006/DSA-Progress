@@ -25,27 +25,17 @@ class Main
       inOrder(root.right);
     }
   }
-  static Node buildTree(int arr[], int n) {
-    if(n == 0){
+ static Node buildTree(int arr[], int n) {
+  return create(arr,0,n);
+}
+static Node create(int[] arr,int i, int n){
+    if(i >= n){
         return null;
     }
-  Node root = new Node(arr[0]);
-    Queue<Node> q = new LinkedList<>();
-    q.add(root);
-  int i = 1;
-    while( i < n ){
-        Node temp = q.poll();
-        temp.left = new Node(arr[i]);
-        q.add(temp.left);
-        i++;
-        if (i < n) {
-            temp.right = new Node(arr[i]);
-            q.add(temp.right);
-            i++;
-        }
-    }
-
-  return root;
+    Node root = new Node(arr[i]);
+    root.left = create(arr,2*i+1,n);
+    root.right = create(arr,2*i+2,n);
+    return root;
 }
   public static void main(String[] args)
   {
