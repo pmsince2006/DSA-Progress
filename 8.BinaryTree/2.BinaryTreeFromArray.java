@@ -25,17 +25,35 @@ class Main
       inOrder(root.right);
     }
   }
- static Node buildTree(int arr[], int n) {
-  return create(arr,0,n);
-}
-static Node create(int[] arr,int i, int n){
-    if(i >= n){
+static Node buildTree(int arr[], int n) {
+
+    if (n == 0) {
         return null;
     }
-    Node root = new Node(arr[i]);
-    root.left = create(arr,2*i+1,n);
-    root.right = create(arr,2*i+2,n);
-    return root;
+
+    Node[] nodes = new Node[n];
+
+    // Create all nodes
+    for (int i = 0; i < n; i++) {
+        nodes[i] = new Node(arr[i]);
+    }
+
+    // Connect left and right children
+    for (int i = 0; i < n; i++) {
+
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+
+        if (left < n) {
+            nodes[i].left = nodes[left];
+        }
+
+        if (right < n) {
+            nodes[i].right = nodes[right];
+        }
+    }
+
+    return nodes[0];
 }
   public static void main(String[] args)
   {
