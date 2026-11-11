@@ -13,7 +13,7 @@
  *
  *  The above class defines a tree node.
  */
-
+// Identical Trees 
 class Result {
   /* 
    * @Input
@@ -35,4 +35,18 @@ class Result {
       }
       return (areSameTree(t1.left,t2.left) == 1) && (areSameTree(t1.right,t2.right) == 1) ? 1 : 0;
   }
+}
+
+// Converting to a Mirror Tree 
+static Node findMirror(Node root) {
+  if(root == null){
+      return null;
+  }
+    Node temp = root.left;
+    root.left = root.right;
+    root.right = temp;
+    
+    findMirror(root.left);
+    findMirror(root.right);
+    return root;
 }
